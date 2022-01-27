@@ -1,0 +1,20 @@
+.articleLinks {
+  min-height: 580px;
+  @apply relative md:top-16 md:h-48;
+  .background {
+    @apply flex flex-col items-center text-gray-50;
+    .backgroundVideo {
+      @apply relative md:w-full md:h-full -z-50 bg-no-repeat bg-auto;
+      background-image: url('./assets/backgroundMask.png');
+    }
+    .textContent {
+      @apply absolute md:top-1/2;
+      h2 {
+        @apply md:text-6xl font-mono md:py-6;
+      }
+      p {
+        @apply text-center md:text-4xl font-sans;
+      }
+    }
+  }
+}

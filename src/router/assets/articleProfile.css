@@ -1,0 +1,51 @@
+.articleProfile {
+  @apply relative md:top-40 w-full flex flex-col justify-center items-center;
+  .profileModal {
+    @apply relative flex flex-row justify-between md:text-xl md:py-24 md:px-36 border border-gray-300 rounded-2xl shadow-lg;
+    .modalLeft {
+      @apply flex flex-col justify-center items-center md:pr-28;
+      .modalIcon {
+        background-image: url('./shortIcon.png');
+        @apply relative rounded-full md:py-4 md:w-32 md:h-32 bg-no-repeat bg-cover;
+      }
+      .modalContent {
+        @apply flex flex-col justify-start items-start md:pt-6;
+        .modalText {
+          @apply md:text-2xl md:font-bold font-sans text-gray-600;
+        }
+        .modalDetail {
+          @apply md:pt-4 md:text-base text-center align-middle;
+          .text {
+            @apply md:pl-2 text-gray-500 hover:animate-textPopUpTop;
+          }
+          .icon {
+            @apply relative md:py-4 md:w-6 md:h-6 bg-no-repeat bg-contain;
+          }
+          .company {
+            @apply flex flex-row;
+            .icon {
+              background-image: url('./companyIcon.svg');
+            }
+          }
+          .school {
+            @apply flex flex-row;
+            .icon {
+              background-image: url('./schoolIcon.svg');
+            }
+          }
+        }
+      }
+    }
+    .modalRight {
+      .profileModal {
+        @apply hover:animate-heartBeat border-gray-200 shadow-md;
+        .modalContent {
+          @apply flex flex-col justify-start items-start;
+          .modalText {
+            @apply md:py-28 md:px-32 md:text-lg md:font-semibold font-sans text-gray-600;
+          }
+        }
+      }
+    }
+  }
+}
