@@ -1,7 +1,7 @@
 .articleProfile {
-  @apply relative md:top-40 w-full flex flex-col justify-center items-center;
+  @apply relative md:top-28 w-full flex flex-col justify-center items-center;
   .profileModal {
-    @apply relative flex flex-row justify-between md:text-xl md:py-24 md:px-36 border border-gray-300 rounded-2xl shadow-lg;
+    @apply relative flex flex-row justify-between md:text-xl md:py-20 md:px-36 border border-gray-300 rounded-2xl shadow-lg;
     .modalLeft {
       @apply flex flex-col justify-center items-center md:pr-28;
       .modalIcon {
@@ -13,13 +13,13 @@
         .modalText {
           @apply md:text-2xl md:font-bold font-sans text-gray-600;
         }
+        .icon {
+          @apply relative md:py-4 md:w-6 md:h-6 bg-no-repeat bg-contain;
+        }
         .modalDetail {
           @apply md:pt-4 md:text-base text-center align-middle;
           .text {
             @apply md:pl-2 text-gray-500 hover:animate-textPopUpTop;
-          }
-          .icon {
-            @apply relative md:py-4 md:w-6 md:h-6 bg-no-repeat bg-contain;
           }
           .company {
             @apply flex flex-row;
@@ -31,6 +31,24 @@
             @apply flex flex-row;
             .icon {
               background-image: url('./schoolIcon.svg');
+            }
+          }
+        }
+        .iconList {
+          @apply flex flex-row md:mt-2;
+          .icon {
+            @apply relative ml-8 px-4 md:py-4 md:w-4 md:h-4 bg-no-repeat bg-cover rounded-full;
+          }
+          .githubIcon {
+            .icon {
+              @apply hover:animate-shadowDropBr;
+              background-image: url('./githubIcon.svg');
+            }
+          }
+          .juejinIcon {
+            .icon {
+              @apply hover:animate-shadowDropBr;
+              background-image: url('./juejinIcon.svg');
             }
           }
         }

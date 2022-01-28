@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import videoSource from './assets/backgroundVideo.mp4'
@@ -6,6 +6,7 @@ import { Article } from './router/articleArticle'
 import { Links } from './router/articleLinks'
 import { Profile } from './router/articleProfile'
 import { Project } from './router/articleProject'
+import { animateSwitch } from './utils/utils'
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
             muted
             loop
             className="backgroundVideo"
-            poster="./assets/backgroundMask.png"
+            poster="src/assets/backgroundMask.png"
           >
             <source src={videoSource} type="video/mp4"></source>
           </video>
@@ -38,23 +39,33 @@ function App() {
         <header id="blogHeader">
           <div className="title">
             <span>
-              <Link to={'/'}>RyanFong's Blog</Link>
+              <Link to={'/'} onClick={animateSwitch}>
+                RyanFong's Blog
+              </Link>
             </span>
             <span className="icon"></span>
           </div>
           <div className="list">
             <ul>
-              <li>
-                <Link to={'/profile'}>个人简介</Link>
+              <li onClick={animateSwitch}>
+                <Link to={'/profile'}>
+                  个人简介
+                </Link>
               </li>
-              <li>
-                <Link to={'/article'}>技术文章</Link>
+              <li onClick={animateSwitch}>
+                <Link to={'/article'}>
+                  技术文章
+                </Link>
               </li>
-              <li>
-                <Link to={'/project'}>项目展示</Link>
+              <li onClick={animateSwitch}>
+                <Link to={'/project'}>
+                  项目展示
+                </Link>
               </li>
-              <li>
-                <Link to={'/links'}>友情链接</Link>
+              <li onClick={animateSwitch}>
+                <Link to={'/links'}>
+                  友情链接
+                </Link>
               </li>
             </ul>
           </div>

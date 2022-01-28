@@ -12,11 +12,34 @@ export function Profile() {
               <div className="modalDetail">
                 <div className="company">
                   <div className="icon"></div>
-                  <div className="text">支付中台 | Joyy</div>
+                  <div className="text">
+                    <a target={'_blank'} href="http://www.huanju.cn/index.html">
+                      支付中台 | Joyy
+                    </a>
+                  </div>
                 </div>
                 <div className="school">
                   <div className="icon"></div>
-                  <div className="text">WYU University</div>
+                  <div className="text">
+                    <a target={'_blank'} href="https://www.wyu.edu.cn/">
+                      WYU University
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="iconList">
+                <div className="githubIcon">
+                  <a target={'_blank'} href={'https://github.com/Leon0827'}>
+                    <div className="icon"></div>
+                  </a>
+                </div>
+                <div className="juejinIcon">
+                  <a
+                    target={'_blank'}
+                    href={'https://juejin.cn/user/1170302947568557'}
+                  >
+                    <div className="icon"></div>
+                  </a>
                 </div>
               </div>
             </div>
