@@ -47,7 +47,19 @@ export function Profile() {
           <div className="modalRight">
             <div className="profileModal">
               <div className="modalContent">
-                <div className="modalText"></div>
+                <div className="modalText">
+                  <p className="personName">⭐️ Ryan Fong </p>
+                  <p>
+                    ⚡ An Electronic Information Engineering Undergraduate
+                    Student.{' '}
+                  </p>
+                  <p>🌐 Web Front End Development Noob Learner. </p>
+                  <p>🌱 Currently fieldwork in Guangzhou, China. </p>
+                  <p>
+                    💬 Ask me about tech and my projects on 1875161218@qq.com{' '}.
+                  </p>
+                  <p>🚀 Fun fact: Web Front End Development. </p>
+                </div>
               </div>
             </div>
           </div>

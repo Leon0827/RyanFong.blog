@@ -1,7 +1,7 @@
 .articleProfile {
   @apply relative md:top-28 w-full flex flex-col justify-center items-center;
   .profileModal {
-    @apply relative flex flex-row justify-between md:text-xl md:py-20 md:px-36 border border-gray-300 rounded-2xl shadow-lg;
+    @apply relative flex flex-row justify-between md:text-xl md:py-20 md:px-20 border border-gray-300 rounded-2xl shadow-lg;
     .modalLeft {
       @apply flex flex-col justify-center items-center md:pr-28;
       .modalIcon {
@@ -60,7 +60,13 @@
         .modalContent {
           @apply flex flex-col justify-start items-start;
           .modalText {
-            @apply md:py-28 md:px-32 md:text-lg md:font-semibold font-sans text-gray-600;
+            @apply md:py-16 md:text-base md:font-semibold font-sans text-gray-600;
+            .personName {
+              @apply md:text-center md:text-2xl;
+            }
+            p {
+              @apply md:py-1
+            }
           }
         }
       }

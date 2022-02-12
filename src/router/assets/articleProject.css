@@ -1,19 +1,38 @@
 .articleProject {
   min-height: 580px;
+  font-family: 'Poppins', sans-serif;
   @apply relative md:top-16 md:h-48;
   .background {
     @apply flex flex-col items-center text-orange-400;
-    .backgroundVideo {
-      @apply relative md:w-full md:h-full -z-50 bg-no-repeat bg-auto;
-      background-image: url('src/assets/backgroundMask.png');
-    }
-    .textContent {
-      @apply absolute md:top-1/2;
-      h2 {
-        @apply md:text-6xl font-mono md:py-6;
+    .container {
+      @apply relative md:h-12 md:w-full flex justify-center items-center flex-wrap md:p-24;
+      .card {
+        max-width: 420px;
+        padding: 30px 0;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+        @apply relative flex flex-col md:mt-12 md:h-48 md:my-16 md:mx-4 bg-slate-50 hover:h-96;
+        .imgBx {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          @apply relative z-10 md:w-64 md:h-64 md:-top-16 md:left-20;
+          img {
+            @apply max-w-full rounded-md justify-center h-full bg-contain;
+          }
+        }
+        .content {
+          transition: 0.3s ease-in-out;
+          @apply relative md:-mt-36 md:left-2 md:py-12 md:px-4 invisible text-gray-800 opacity-0;
+          h2 {
+            @apply text-2xl text-center;
+          }
+          p {
+            @apply md:w-96 text-center;
+          }
+        }
       }
-      p {
-        @apply text-center md:text-4xl font-sans;
+      .card:hover .content {
+        transition-delay: 0.3s;
+        @apply visible opacity-80 md:-mt-16;
       }
     }
   }

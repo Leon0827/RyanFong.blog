@@ -6,7 +6,7 @@ header {
   @apply flex flex-row justify-around items-center md:w-full md:py-8 md:space-x-12 md:h-8 md:text-lg fixed top-0 border-b border-slate-200 bg-white;
   .title .icon {
     background-image: url('./assets/FuIcon.svg');
-    @apply w-8 h-8 ml-1 fixed bg-no-repeat bg-cover transform -skew-x-12 skew-y-12;
+    @apply md:w-8 md:h-8 md:ml-1 fixed bg-no-repeat bg-cover transform -skew-x-12 skew-y-12;
   }
   .list {
     ul {

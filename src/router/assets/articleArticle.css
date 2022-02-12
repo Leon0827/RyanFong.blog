@@ -1,7 +1,7 @@
-.articleArticle {
+.articleJestArticle {
   @apply relative md:top-28 flex flex-col justify-center items-center;
-  .profileModal {
-    @apply relative flex flex-col md:text-lg md:px-16 md:py-4 border border-gray-200 rounded-2xl shadow-md hover:animate-bgShowUp;
+  .profileJestModal {
+    @apply relative flex flex-col md:text-lg md:px-16 md:mb-12 border border-gray-200 rounded-2xl shadow-md hover:animate-bgShowUp;
     .modalArticle {
       @apply relative flex flex-row;
       .modalLeft {
@@ -11,7 +11,22 @@
         }
       }
       .modalRight {
-        @apply border-none md:px-6;
+        @apply border-none md:px-6 hover:animate-wobbleBottom;
+      }
+    }
+  }
+  .profileNestModal {
+    @apply relative flex flex-col md:text-lg md:px-16 md:py-16 md:mb-12 border border-gray-200 rounded-2xl shadow-md hover:animate-bgShowUp;
+    .modalArticle {
+      @apply relative flex flex-row;
+      .modalLeft {
+        @apply flex flex-col justify-center items-center md:px-6;
+        div {
+          @apply md:py-2;
+        }
+      }
+      .modalRight {
+        @apply border-none md:px-6 hover:animate-wobbleBottom;
       }
     }
   }
